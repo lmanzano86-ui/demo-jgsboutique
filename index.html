@@ -9,49 +9,57 @@
 {"@context":"https://schema.org","@type":"ClothingStore","name":"JG'S BOUTIQUE","address":{"@type":"PostalAddress","streetAddress":"2310 W Waters Ave J","addressLocality":"Tampa","addressRegion":"FL","postalCode":"33604","addressCountry":"US"},"telephone":"+1-813-915-2511","geo":{"@type":"GeoCoordinates","latitude":28.025031,"longitude":-82.482144},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"11:30","closes":"20:00"}],"sameAs":["https://www.tiktok.com/@jgsboutiquetampa"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"13"}}
 </script>
 <style>
-body{margin:0;background:#f7f3ec;color:#111;font-family:Georgia,serif}
-a{color:#8a6d1f}
-.topbar{background:#0d0d0d;color:#f7f3ec;padding:10px 20px;display:flex;justify-content:space-between;align-items:center}
+body{margin:0;background:var(--fondo);color:var(--texto);font-family:Georgia,serif}
+a{color:var(--acento)}
+body.tema-actual{--fondo:#f7f3ec;--texto:#111;--acento:#8a6d1f;--marco:#c9a227;--tarjeta:#fff;--tarjeta-borde:#e5dcc3;--card-top:#c9a227;--btn-fondo:#0d0d0d;--btn-texto:#f7f3ec;--btn-borde:#0d0d0d;--btn-line-texto:#111;--lead:#444;--caption:#666;--visit-fondo:#0d0d0d;--visit-texto:#f7f3ec;--visit-borde:#333;--footer-texto:#777;--topbar-fondo:#0d0d0d;--topbar-texto:#f7f3ec}
+body.tema-marmol{--fondo:#0c0c0c;--texto:#f2ead8;--acento:#c9a227;--marco:#c9a227;--tarjeta:#171717;--tarjeta-borde:#3a3220;--card-top:#c9a227;--btn-fondo:#c9a227;--btn-texto:#111;--btn-borde:#c9a227;--btn-line-texto:#f2ead8;--lead:#cfc6ae;--caption:#a99f83;--visit-fondo:#171717;--visit-texto:#f2ead8;--visit-borde:#3a3220;--footer-texto:#a99f83;--topbar-fondo:#000;--topbar-texto:#f2ead8}
+body.tema-marmol{background-image:linear-gradient(160deg,#0c0c0c 0%,#141414 45%,#0a0a0a 100%)}
+.selector{background:#0d0d0d;color:#f7f3ec;padding:12px 14px;text-align:center;font-size:15px}
+.selector button{border:2px solid #c9a227;background:transparent;color:#f7f3ec;padding:6px 12px;border-radius:20px;font-weight:bold;cursor:pointer;margin:2px}
+.selector button.activo{background:#c9a227;color:#111}
+.topbar{background:var(--topbar-fondo);color:var(--topbar-texto);padding:10px 20px;display:flex;justify-content:space-between;align-items:center}
 .topbar b{letter-spacing:4px;font-size:18px}
 .topbar b span{color:#c9a227}
-.lang button{border:1px solid #c9a227;background:transparent;color:#f7f3ec;padding:6px 12px;border-radius:20px;cursor:pointer;font-weight:bold}
+.lang button{border:1px solid #c9a227;background:transparent;color:var(--topbar-texto);padding:6px 12px;border-radius:20px;cursor:pointer;font-weight:bold}
 .lang button.activo{background:#c9a227;color:#111}
 .hero{max-width:1100px;margin:0 auto;padding:40px 20px;display:flex;gap:40px;align-items:center}
 .hero-text{flex:1}
-.hero-text .eyebrow{color:#8a6d1f;letter-spacing:3px;font-size:14px;text-transform:uppercase}
+.hero-text .eyebrow{color:var(--acento);letter-spacing:3px;font-size:14px;text-transform:uppercase}
 .hero-text h1{font-size:52px;line-height:1.05;margin:12px 0}
-.hero-text h1 em{color:#8a6d1f;font-style:italic}
-.hero-text p{font-size:19px;line-height:1.7;color:#444}
+.hero-text h1 em{color:var(--acento);font-style:italic}
+.hero-text p{font-size:19px;line-height:1.7;color:var(--lead)}
 .hero-img{flex:1}
-.hero-img img{width:100%;border-radius:4px;border:1px solid #c9a227}
-.btn{display:inline-block;background:#0d0d0d;color:#f7f3ec;padding:13px 22px;border-radius:30px;text-decoration:none;font-weight:bold;margin:6px 6px 6px 0;border:2px solid #0d0d0d}
+.hero-img img{width:100%;border-radius:4px;border:1px solid var(--marco)}
+.btn{display:inline-block;background:var(--btn-fondo);color:var(--btn-texto);padding:13px 22px;border-radius:30px;text-decoration:none;font-weight:bold;margin:6px 6px 6px 0;border:2px solid var(--btn-borde)}
 .btn.gold{background:#c9a227;color:#111;border-color:#c9a227}
-.btn.line{background:transparent;color:#111}
+.btn.line{background:transparent;color:var(--btn-line-texto)}
 .rule{height:2px;background:#c9a227;max-width:1100px;margin:10px auto}
 section{max-width:1100px;margin:0 auto;padding:36px 20px}
 h2{font-size:34px;margin:0 0 8px}
-h2 em{color:#8a6d1f;font-style:italic}
-section p.lead{font-size:19px;line-height:1.7;color:#444}
+h2 em{color:var(--acento);font-style:italic}
+section p.lead{font-size:19px;line-height:1.7;color:var(--lead)}
 .cards{display:flex;gap:18px;flex-wrap:wrap;margin-top:24px}
-.card{flex:1;min-width:220px;background:#fff;border:1px solid #e5dcc3;border-top:4px solid #c9a227;padding:22px;border-radius:4px}
+.card{flex:1;min-width:220px;background:var(--tarjeta);border:1px solid var(--tarjeta-borde);border-top:4px solid var(--card-top);padding:22px;border-radius:4px}
 .card h3{margin:0 0 8px;font-size:22px}
-.card p{color:#555;line-height:1.6;margin:0}
+.card p{color:var(--lead);line-height:1.6;margin:0}
+.card img{width:100%;border-radius:4px;border:1px solid var(--marco);margin-bottom:12px}
 .galeria{display:flex;gap:18px;flex-wrap:wrap;margin-top:24px}
 .galeria figure{flex:1;min-width:280px;margin:0}
-.galeria img{width:100%;border-radius:4px;border:1px solid #c9a227}
-.galeria figcaption{color:#666;font-size:15px;margin-top:8px;text-align:center}
-.visit{background:#0d0d0d;color:#f7f3ec;border-radius:4px;padding:30px}
-.visit h2{color:#f7f3ec}
+.galeria img{width:100%;border-radius:4px;border:1px solid var(--marco)}
+.galeria figcaption{color:var(--caption);font-size:15px;margin-top:8px;text-align:center}
+.visit{background:var(--visit-fondo);color:var(--visit-texto);border-radius:4px;padding:30px;border:1px solid var(--tarjeta-borde)}
+.visit h2{color:var(--visit-texto)}
 .visit h2 em{color:#c9a227}
 .visit a{color:#c9a227}
-.hours td{padding:8px 16px 8px 0;border-bottom:1px solid #333}
+.hours td{padding:8px 16px 8px 0;border-bottom:1px solid var(--visit-borde)}
 .rating{font-size:20px}
 .rating strong{color:#c9a227;font-size:30px}
-footer{max-width:1100px;margin:0 auto;padding:24px 20px 40px;text-align:center;color:#777;font-size:15px;line-height:1.7}
+footer{max-width:1100px;margin:0 auto;padding:24px 20px 40px;text-align:center;color:var(--footer-texto);font-size:15px;line-height:1.7}
 @media(max-width:700px){.hero{flex-direction:column}.hero-text h1{font-size:38px}}
 </style>
 </head>
-<body>
+<body class="tema-actual">
+<div class="selector"><span data-es="🎨 Diseños — elige cómo se ve la página (temporal, solo para elegir)" data-en="🎨 Designs — choose how the page looks (temporary, just to choose)">🎨 Diseños — elige cómo se ve la página (temporal, solo para elegir)</span><br><button type="button" onclick="setTheme('tema-actual')" data-tema-btn="tema-actual">Actual</button> <button type="button" onclick="setTheme('tema-marmol')" data-tema-btn="tema-marmol">Mármol Negro</button></div>
 <div class="topbar"><b>JG'S <span>BOUTIQUE</span></b><div class="lang"><button type="button" onclick="setLang('es')" id="b-es" class="activo">ES</button> <button type="button" onclick="setLang('en')" id="b-en">EN</button></div></div>
 
 <div class="hero">
@@ -68,13 +76,29 @@ footer{max-width:1100px;margin:0 auto;padding:24px 20px 40px;text-align:center;c
 <div class="rule"></div>
 
 <section>
+<h2 data-es="Colecciones" data-en="Collections">Colecciones</h2>
+<p class="lead" data-es="Lo que encuentras en la tienda, por categoría." data-en="What you will find in the store, by category.">Lo que encuentras en la tienda, por categoría.</p>
+<div class="cards">
+<div class="card"><img src="imgs/tienda.jpg" alt="Ropa de dama en JG'S BOUTIQUE"><h3 data-es="Ropa de dama" data-en="Women's clothing">Ropa de dama</h3><p data-es="Vestidos, jeans, blusas y conjuntos para el día y la noche." data-en="Dresses, jeans, blouses and sets for day and night.">Vestidos, jeans, blusas y conjuntos para el día y la noche.</p></div>
+<div class="card"><img src="imgs/sudaderas.jpg" alt="Ropa de caballero en JG'S BOUTIQUE"><h3 data-es="Ropa de caballero" data-en="Men's clothing">Ropa de caballero</h3><p data-es="Camisetas, sudaderas, jeans y conjuntos casuales." data-en="T-shirts, hoodies, jeans and casual sets.">Camisetas, sudaderas, jeans y conjuntos casuales.</p></div>
+<div class="card"><img src="imgs/accesorios.jpg" alt="Bolsos y accesorios en JG'S BOUTIQUE"><h3 data-es="Bolsos y accesorios" data-en="Handbags and accessories">Bolsos y accesorios</h3><p data-es="Bolsos, gorras y complementos en vitrina." data-en="Handbags, caps and accessories in the showcase.">Bolsos, gorras y complementos en vitrina.</p></div>
+<div class="card"><img src="imgs/marca.jpg" alt="La pared de la marca JG'S BOUTIQUE"><h3 data-es="Estilo JG'S" data-en="The JG'S style">Estilo JG'S</h3><p data-es="La selección de la casa, en negro y dorado." data-en="The house selection, in black and gold.">La selección de la casa, en negro y dorado.</p></div>
+</div>
+</section>
+
+<section>
 <h2 data-es="La <em>tienda</em>" data-en="The <em>store</em>">La <em>tienda</em></h2>
 <p class="lead" data-es="Un local amplio en Waters Ave con percheros bien surtidos, maniquíes con los looks de la temporada y una vitrina de accesorios. Se entra, se mira con calma y se sale vestido." data-en="A spacious store on Waters Ave with well-stocked racks, mannequins wearing the season's looks and an accessories showcase. Walk in, browse at ease, walk out dressed.">Un local amplio en Waters Ave con percheros bien surtidos, maniquíes con los looks de la temporada y una vitrina de accesorios. Se entra, se mira con calma y se sale vestido.</p>
-<img src="imgs/tienda.jpg" alt="Interior de JG'S BOUTIQUE" style="width:100%;border-radius:4px;border:1px solid #c9a227;margin-top:18px">
+<img src="imgs/tienda.jpg" alt="Interior de JG'S BOUTIQUE" style="width:100%;border-radius:4px;border:1px solid var(--marco);margin-top:18px">
+</section>
+
+<section>
+<h2 data-es="La experiencia <em>JG'S</em>" data-en="The <em>JG'S</em> experience">La experiencia <em>JG'S</em></h2>
+<p class="lead" data-es="Comprar aquí no es entrar y salir: es probarte, mirarte y salir con algo que de verdad te gusta." data-en="Shopping here is not in and out: it is trying on, looking, and leaving with something you truly like.">Comprar aquí no es entrar y salir: es probarte, mirarte y salir con algo que de verdad te gusta.</p>
 <div class="cards">
-<div class="card"><h3 data-es="Ropa de dama" data-en="Women's clothing">Ropa de dama</h3><p data-es="Vestidos, jeans, blusas y conjuntos para el día y la noche." data-en="Dresses, jeans, blouses and sets for day and night.">Vestidos, jeans, blusas y conjuntos para el día y la noche.</p></div>
-<div class="card"><h3 data-es="Ropa de caballero" data-en="Men's clothing">Ropa de caballero</h3><p data-es="Camisetas, sudaderas, jeans y conjuntos casuales." data-en="T-shirts, hoodies, jeans and casual sets.">Camisetas, sudaderas, jeans y conjuntos casuales.</p></div>
-<div class="card"><h3 data-es="Bolsos y accesorios" data-en="Handbags and accessories">Bolsos y accesorios</h3><p data-es="Bolsos, gorras y complementos en vitrina." data-en="Handbags, caps and accessories in the showcase.">Bolsos, gorras y complementos en vitrina.</p></div>
+<div class="card"><h3 data-es="Atención personalizada" data-en="Personal attention">Atención personalizada</h3><p data-es="Te ayudamos a armar tu look, sin prisa." data-en="We help you put your look together, no rush.">Te ayudamos a armar tu look, sin prisa.</p></div>
+<div class="card"><h3 data-es="Piezas seleccionadas" data-en="Curated pieces">Piezas seleccionadas</h3><p data-es="Selección cuidada para dama y caballero, no montones de lo mismo." data-en="A curated selection for women and men, not piles of the same.">Selección cuidada para dama y caballero, no montones de lo mismo.</p></div>
+<div class="card"><h3 data-es="Mídete con calma" data-en="Try it on at ease">Mídete con calma</h3><p data-es="Probadores cómodos y espejo grande para salir segura de tu compra." data-en="Comfortable fitting rooms and a big mirror so you leave sure of your purchase.">Probadores cómodos y espejo grande para salir segura de tu compra.</p></div>
 </div>
 </section>
 
@@ -84,6 +108,8 @@ footer{max-width:1100px;margin:0 auto;padding:24px 20px 40px;text-align:center;c
 <div class="galeria">
 <figure><img src="imgs/marca.jpg" alt="Pared con el logo dorado de JG'S BOUTIQUE"><figcaption data-es="La pared de la marca, negro y dorado" data-en="The brand wall, black and gold">La pared de la marca, negro y dorado</figcaption></figure>
 <figure><img src="imgs/accesorios.jpg" alt="Vitrina de bolsos y accesorios"><figcaption data-es="Vitrina de bolsos y accesorios" data-en="Handbag and accessory showcase">Vitrina de bolsos y accesorios</figcaption></figure>
+<figure><img src="imgs/percheros.jpg" alt="Percheros y vitrina de JG'S BOUTIQUE"><figcaption data-es="Percheros y vitrina" data-en="Racks and showcase">Percheros y vitrina</figcaption></figure>
+<figure><img src="imgs/sudaderas.jpg" alt="Sudaderas y camisetas en JG'S BOUTIQUE"><figcaption data-es="Sudaderas y camisetas" data-en="Hoodies and T-shirts">Sudaderas y camisetas</figcaption></figure>
 </div>
 </section>
 
@@ -113,6 +139,8 @@ document.getElementById('b-es').className = l==='es' ? 'activo' : '';
 document.getElementById('b-en').className = l==='en' ? 'activo' : '';
 document.documentElement.lang = l;
 }
+function setTheme(t){document.body.className=t;try{localStorage.setItem('jgs-tema',t)}catch(e){}document.querySelectorAll('[data-tema-btn]').forEach(function(b){b.classList.toggle('activo',b.getAttribute('data-tema-btn')===t)})}
+(function(){var t=null;try{t=localStorage.getItem('jgs-tema')}catch(e){}setTheme(t||'tema-actual')})();
 </script>
 </body>
 </html>
