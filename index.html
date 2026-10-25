@@ -13,9 +13,9 @@ body{margin:0;background:var(--fondo);color:var(--texto);font-family:Georgia,ser
 a{color:var(--acento)}
 body.tema-actual{--fondo:#f7f3ec;--texto:#111;--acento:#8a6d1f;--marco:#c9a227;--tarjeta:#fff;--tarjeta-borde:#e5dcc3;--card-top:#c9a227;--btn-fondo:#0d0d0d;--btn-texto:#f7f3ec;--btn-borde:#0d0d0d;--btn-line-texto:#111;--lead:#444;--caption:#666;--visit-fondo:#0d0d0d;--visit-texto:#f7f3ec;--visit-borde:#333;--footer-texto:#777;--topbar-fondo:#0d0d0d;--topbar-texto:#f7f3ec}
 body.tema-marmol{--fondo:#0c0c0c;--texto:#f2ead8;--acento:#c9a227;--marco:#c9a227;--tarjeta:#171717;--tarjeta-borde:#3a3220;--card-top:#c9a227;--btn-fondo:#c9a227;--btn-texto:#111;--btn-borde:#c9a227;--btn-line-texto:#f2ead8;--lead:#cfc6ae;--caption:#a99f83;--visit-fondo:#171717;--visit-texto:#f2ead8;--visit-borde:#3a3220;--footer-texto:#a99f83;--topbar-fondo:#000;--topbar-texto:#f2ead8}
-body.tema-marmol{--vetas:repeating-linear-gradient(115deg,transparent 0 70px,rgba(201,162,39,.35) 70px 72px,transparent 72px 170px),repeating-linear-gradient(70deg,transparent 0 120px,rgba(232,199,102,.25) 120px 121px,transparent 121px 250px),repeating-linear-gradient(100deg,transparent 0 45px,rgba(201,162,39,.20) 45px 46px,transparent 46px 180px),repeating-linear-gradient(140deg,transparent 0 180px,rgba(201,162,39,.15) 180px 182px,transparent 182px 320px),linear-gradient(115deg,transparent 20%,rgba(201,162,39,.07) 40%,transparent 60%)}
-body.tema-marmol{background-image:var(--vetas),linear-gradient(160deg,#0c0c0c 0%,#141414 45%,#0a0a0a 100%)}
-body.tema-marmol .card,body.tema-marmol .visit{background-image:var(--vetas)}
+body.tema-marmol{--vetas:url(imgs/vetas.svg)}
+body.tema-marmol{background-image:var(--vetas),linear-gradient(160deg,#0c0c0c 0%,#141414 45%,#0a0a0a 100%);background-size:800px 800px,auto}
+body.tema-marmol .card,body.tema-marmol .visit{background-image:var(--vetas);background-size:800px 800px}
 body.tema-marmol{--oro:repeating-linear-gradient(115deg,rgba(0,0,0,.22) 0 1px,transparent 1px 16px),repeating-linear-gradient(65deg,rgba(255,244,190,.28) 0 1px,transparent 1px 26px),linear-gradient(120deg,#7a5c14 0%,#c9a227 28%,#e8c766 45%,#f7e08b 52%,#c9a227 68%,#6b5310 100%)}
 body.tema-marmol .rule{background:var(--oro);height:3px}
 body.tema-marmol .btn:not(.line){background:var(--oro)}
